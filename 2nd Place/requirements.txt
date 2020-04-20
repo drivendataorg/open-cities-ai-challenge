@@ -1,0 +1,13 @@
+albumentations
+cv2
+jpeg4py
+matplotlib
+numpy
+pandas
+Pillow
+pytorch
+pystac
+rasterio
+segmentation-models-pytorch
+sklearn
+tqdm

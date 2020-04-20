@@ -1,0 +1,9 @@
+# Text Editors / IDEs
+.idea/
+
+# Python
+*cache*
+
+# Data/weights folders
+/data
+/last_1024_pl2_ft
