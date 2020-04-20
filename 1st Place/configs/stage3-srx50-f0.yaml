@@ -1,0 +1,80 @@
+logdir: models/stage3/srx50-f0/
+gpus: [0]
+
+# define model
+model:
+  architecture: Unet
+  init_params:
+    encoder_name: se_resnext50_32x4d
+    encoder_weights: imagenet
+    classes: 1
+    activation: sigmoid
+
+data:
+
+  df_path: ./data/processed/train_folds.csv
+  fold: 0
+
+  # datasets
+  train_dataset:
+    name: SegmentationDataset
+    init_params:
+      images_dir: ./data/processed/train/images/
+      masks_dir: ./data/processed/train/masks/
+      transform_name: train_transform_2
+
+  dataset_pseudo:
+    name: SegmentationDataset
+    init_params:
+      images_dir: ./data/processes/stage3/images
+      masks_dir: ./data/processes/stage3/masks
+      transform_name: train_transform_4
+
+  valid_dataset:
+    name: SegmentationDataset
+    init_params:
+      images_dir: ./data/processed/train/images/
+      masks_dir: ./data/processed/train/masks/
+      transform_name: test_transform_4
+
+  # loaders
+  train_dataloader:
+    batch_size: 6
+    shuffle: true
+    drop_last: true
+    pin_memory: true
+    num_workers: 8
+
+  valid_dataloader:
+    batch_size: 8
+    shuffle: false
+    drop_last: false
+    pin_memory: true
+    num_workers: 16
+
+training:
+
+  losses:
+    mask:
+      name: DiceLoss
+      init_params:
+
+  metrics:
+    mask:
+      - name: MicroIoU
+        init_params:
+
+  optimizer:
+    name: Adam
+    init_params:
+      lr: 0.0001
+
+  scheduler:
+    name: PolyLR
+    init_params:
+      epochs: 50
+
+  fit:
+    epochs: 50
+    accumulation_steps: 4
+    verbose: true

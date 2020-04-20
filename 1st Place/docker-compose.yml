@@ -1,0 +1,14 @@
+version: "2.3"
+
+services:
+    dev:
+        container_name: open-cities-dev
+        image: open-cities:0.1
+        volumes:
+            - ./:/workspace
+            - /data_rw/competitions/open_cities/:/workspace/old-data/
+            - /data_rw/competitions/open_cities_refactor/:/workspace/data/
+        working_dir: /workspace
+        ipc: host
+        runtime: nvidia
+        command: sleep infinity
