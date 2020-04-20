@@ -1,0 +1,33 @@
+#model back-bone
+model_name: efficientnet-b1
+#checkpoint to load
+model: xxx
+#inference image width should in power of 32
+width: 512
+batch_size: 1
+#inference data with *.tif or *.jpg images
+data_dir: xxx
+#if true, some visualizations will be shown ... 
+debug: False
+#TTA flip dimension 3|2|23
+flip: 0
+#TTA - transpose image
+transpose: False
+scale_factor: 1.0
+#some FPN modifications ....
+use_attention: True
+use_context_block: False
+use_mish: False
+#Threshold to outputs logits 
+threshold: 0.57
+ref_scale: 0.07
+output_dir: ./outputs-eval
+#empty mining thresholds/output dir
+mine_empty: False
+output_dir_empty: xxx
+empty_threshold: 0.2
+
+hydra:
+  run:
+    # Output directory for normal runs
+    dir: ${output_dir}/${now:%Y-%m-%d_%H-%M-%S}

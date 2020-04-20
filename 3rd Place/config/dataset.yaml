@@ -1,0 +1,14 @@
+
+base_dir: xxx
+out_dir: xxx
+max_samples: 20000
+shuffle: False
+scale: 1
+process_tier: tier_1
+#if using soft-lables, it is convinient to generate src images in 1024x1024 resolution
+crop1024: False
+
+hydra:
+  run:
+    # Output directory for normal runs
+    dir: ./outputs-data/${now:%Y-%m-%d_%H-%M-%S}

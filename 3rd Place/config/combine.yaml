@@ -1,0 +1,10 @@
+
+base_dir: xxx
+threshold: 0.54
+add_mask_suffix: False
+debug: False
+
+hydra:
+  run:
+    # Output directory for normal runs
+    dir: ./outputs-ensamble/${now:%Y-%m-%d_%H-%M-%S}

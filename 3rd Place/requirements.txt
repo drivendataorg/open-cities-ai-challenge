@@ -1,0 +1,14 @@
+geopandas==0.7.0
+hydra-core==0.11.3
+numpy==1.17.2
+opencv-python==4.2.0.32
+optuna==0.19.0
+pandas==0.25.1
+Pillow==6.2.0
+rasterio==1.1.3
+scikit-image==0.15.0
+scikit-learn==0.21.3
+scipy==1.3.1
+torch==1.3.0
+torchvision==0.4.0+cu92
+tqdm==4.36.1
