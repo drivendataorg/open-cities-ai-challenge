@@ -29,3 +29,7 @@ Place |Team or User | Public Score | Private Score | Summary of Model
 Additional solution details can be found in the `reports` folder inside the directory for each submission.
 
 **Benchmark Blog Post: ["Open Cities AI Challenge benchmark model"](https://github.com/azavea/open-cities-ai-challenge-benchmark-model)**
+
+## Responsible AI track
+
+This competition also included a **[Responsible AI track](https://www.drivendata.org/competitions/60/building-segmentation-disaster-resilience/page/152/)** in which participants were asked to apply an ethical lens to the design and use of AI systems for DRM. The top three submissions can be viewed in OpenDRI blog post [Perspectives on Responsible AI for Disaster Risk Management](https://opendri.org/resource/perspectives-on-responsible-ai-for-drm/). The winning reports are also included in this repository.
