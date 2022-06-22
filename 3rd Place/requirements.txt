@@ -1,6 +1,6 @@
 geopandas==0.7.0
 hydra-core==0.11.3
-numpy==1.17.2
+numpy==1.22.0
 opencv-python==4.2.0.32
 optuna==0.19.0
 pandas==0.25.1
