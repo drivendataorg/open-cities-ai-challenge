@@ -11,10 +11,9 @@ As urban populations grow, more people are exposed to the benefits and hazards o
 
 In this challenge, participants segment building footprints from aerial imagery. The data consists of drone imagery from 10 different cities and regions across Africa. The goal is to classify the presence or absence of a building on a pixel-by-pixel basis.
 
-
 ## What's in this Repository
 
-This repository contains code from winning competitors in the [Open Cities AI Challenge: Segmenting Buildings for Disaster Resilience](https://www.drivendata.org/competitions/60/building-segmentation-disaster-resilience/) DrivenData challenge.
+This repository contains code from winning competitors in the [Open Cities AI Challenge: Segmenting Buildings for Disaster Resilience](https://www.drivendata.org/competitions/60/building-segmentation-disaster-resilience/) DrivenData challenge. Code for all winning solutions are open source under the MIT License.
 
 **Winning code for other DrivenData competitions is available in the [competition-winners repository](https://github.com/drivendataorg/competition-winners).**
 
@@ -29,6 +28,8 @@ Place |Team or User | Public Score | Private Score | Summary of Model
 Additional solution details can be found in the `reports` folder inside the directory for each submission.
 
 **Benchmark Blog Post: ["Open Cities AI Challenge benchmark model"](https://github.com/azavea/open-cities-ai-challenge-benchmark-model)**
+
+**["Meet the Winners" Blog Post"](https://drivendata.co/blog/open-cities-disaster-winners/)**
 
 ## Responsible AI track
 
