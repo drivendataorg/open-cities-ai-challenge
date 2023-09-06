@@ -29,7 +29,7 @@ Additional solution details can be found in the `reports` folder inside the dire
 
 **Benchmark Blog Post: ["Open Cities AI Challenge benchmark model"](https://github.com/azavea/open-cities-ai-challenge-benchmark-model)**
 
-**["Meet the Winners" Blog Post"](https://drivendata.co/blog/open-cities-disaster-winners/)**
+**["Meet the Winners" Blog Post](https://drivendata.co/blog/open-cities-disaster-winners/)**
 
 ## Responsible AI track
 
